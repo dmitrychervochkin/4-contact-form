@@ -1,0 +1,86 @@
+.email-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        align-items: stretch;
+
+        &--inputs,
+        &--message {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__footer {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        &--header {
+            display: flex;
+            justify-content: space-between;
+
+            & p {
+                color: red;
+                text-decoration: underline;
+            }
+        }
+
+        &--services {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+
+            & .service-item {
+                padding: 12px 20px;
+                background-color: #fafafc;
+                border-radius: 8px;
+                border: 3px solid #fafafc;
+                transition: 0.2s background-color, 0.2s border-color;
+
+                &:hover {
+                    color: #e69d9f;
+                    background-color: white;
+                    border: 3px solid #e69d9f;
+                    cursor: pointer;
+                }
+            }
+
+            & .current-service {
+                color: #e69d9f;
+                background-color: white;
+                border: 3px solid #e69d9f;
+            }
+        }
+    }
+    &__actions {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+
+        & .submit-btn {
+            color: white;
+            background-color: #fa949d;
+            border-radius: 8px;
+            border: none;
+            font-size: 16px;
+            padding: 18px 50px;
+            transition: 0.2s background-color;
+
+            &:hover {
+                background-color: #e2b2b3;
+                cursor: pointer;
+            }
+
+            &.success-btn {
+                background-color: #88ce7e;
+            }
+        }
+    }
+}
