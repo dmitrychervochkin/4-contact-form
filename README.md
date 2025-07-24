@@ -48,4 +48,4 @@ npm install
 npm run dev
 ```
 
-![Превью](./public/preview.png) 
+![Превью](./preview.png) 
